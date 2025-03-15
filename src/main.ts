@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
+import { appConfig } from './app.config'
+import { ApplicationComponent } from './components/application/application.component'
 
 @Component({
   selector: 'app-root',
+  imports: [ApplicationComponent],
   template: `
-    <h1>Hello from {{ name }}!</h1>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-    </a>
+    <application></application>
   `,
 })
 export class App {
   name = 'Angular';
 }
 
-bootstrapApplication(App);
+bootstrapApplication(App, appConfig).catch((err) => console.log(err));
