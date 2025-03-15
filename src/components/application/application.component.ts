@@ -4,10 +4,11 @@ import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { MessageModule } from 'primeng/message';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'application',
-  imports: [CommonModule, InputTextModule, FormsModule, MessageModule, ButtonModule],
+  imports: [CommonModule, RouterOutlet, InputTextModule, FormsModule, MessageModule, ButtonModule],
   templateUrl: './application.component.html',
   styleUrl: './application.component.css'
 })
