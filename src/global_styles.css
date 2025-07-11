@@ -3,3 +3,22 @@ html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.component {
+  width: 200px;
+  height: auto;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  /* position: relative; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.component h3 {
+  margin: unset;
+}

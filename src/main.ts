@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app.config'
 import { ApplicationComponent } from './components/application/application.component'
+import { RootComponent } from './components/root/root.component'
 
 @Component({
   selector: 'app-root',
-  imports: [ApplicationComponent],
+  imports: [RootComponent],
   template: `
-    <application></application>
+    <root></root>
   `,
 })
 export class App {
