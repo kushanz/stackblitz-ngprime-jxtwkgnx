@@ -15,9 +15,11 @@ html {
   height: auto;
   border: 1px solid blueviolet;
   border-radius: 8px;
-  padding: 10px;
+  padding: 30px 10px;
   display: flex;
   justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 .level {
   display: flex;
@@ -26,4 +28,8 @@ html {
 }
 .component h3 {
   margin: unset;
+  color: #000;
+}
+.component p {
+  color: #000;
 }
