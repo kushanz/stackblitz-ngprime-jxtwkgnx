@@ -10,6 +10,7 @@ import {ColorChangeService} from '../../../services/colorchange.service'
 export class E2Component {
   private colorchange = inject(ColorChangeService)
   ch = ''
+  inlinecount = 0
 
   ngDoCheck() {
     this.ch = this.colorchange.getNextColor()
