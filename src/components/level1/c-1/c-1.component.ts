@@ -8,7 +8,7 @@ import { signalService } from '../../../services/signalSrvc.service';
   imports: [F2Component],
   templateUrl: './c-1.component.html',
   styleUrl: './c-1.component.css',
-  // changeDetection:ChangeDetectionStrategy.OnPush
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
 export class C1Component {
   private colorchange = inject(ColorChangeService)
