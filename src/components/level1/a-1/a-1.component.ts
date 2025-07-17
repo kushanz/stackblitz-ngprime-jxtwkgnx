@@ -19,10 +19,10 @@ export class A1Component implements DoCheck {
     this.ch = this.colorchange.getNextColor()
   }
   incremtneSubjectCount() {
-    setInterval(() => {
+    // setInterval(() => {
       this.interaction.increment()
       // this.cdRef.markForCheck()
-    },1000)
+    // },1000)
     
   }
 }

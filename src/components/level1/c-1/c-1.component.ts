@@ -20,7 +20,10 @@ export class C1Component {
   }
 
   signalIncrementButton() {
-    this.signalSrvc.incrementCount()
+    setInterval(() => {
+      this.signalSrvc.incrementCount()
+    },1000)
+    
   }
 
 }
